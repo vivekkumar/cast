@@ -117,7 +117,7 @@
 				
 				remotePlayerController.addEventListener(cast.framework.RemotePlayerEventType.IS_CONNECTED_CHANGED, function() {
 					castSession = cast.framework.CastContext.getInstance().getCurrentSession();
-					
+					initUI();					
 				} );
 			};
 			
