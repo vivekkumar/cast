@@ -3,7 +3,21 @@
 <html>
 	<head>
 		<title>Cast sender app</title>
-		
+		<style>
+			#thumb-container a {
+			    background: #a9db80;
+			    background: -moz-linear-gradient(top, #a9db80 0%, #96c56f 100%);
+			    background: -webkit-linear-gradient(top, #a9db80 0%,#96c56f 100%);
+			    background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%);
+			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 );
+			    padding: 8px;
+			    margin: 2px 0;
+			    display: inline-block;
+			    border: 1px solid #ddd;
+			    border-radius: 5px;
+			    text-decoration: none;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -134,7 +148,6 @@
 			var initUI = function() {
 				var c = document.querySelector("#thumb-container");
 				for(var i = 0; i < mediaContents.length; i++) {
-					var thumb = document.createElement("div");
 					var a = document.createElement("a");
 					a.innerHTML = mediaContents[i].title;
 					a.href = "#";					
@@ -144,10 +157,7 @@
 							return false;
 						}
 					})(i, a);
-					thumb.classList.add("thumb");
-					thumb.appendChild(a);
-					c.appendChild(thumb);
-					
+					c.appendChild(a);					
 				}
 			};
 
