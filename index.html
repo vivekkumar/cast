@@ -9,6 +9,7 @@
 	<body>
 		<h2>Cast sender app</h2>
 		<button id="castButton" is="google-cast-button">Cast Me</button>
+		<div id="thumb-container"></div>
 		
 		<!--<video id="video" src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>-->
 		<script>
@@ -116,23 +117,35 @@
 				
 				remotePlayerController.addEventListener(cast.framework.RemotePlayerEventType.IS_CONNECTED_CHANGED, function() {
 					castSession = cast.framework.CastContext.getInstance().getCurrentSession();
-					var mediaInfo = new chrome.cast.media.MediaInfo(mediaContents[mediaIndex]['sources'][0], 'video/mp4');
-					var request = new chrome.cast.media.LoadRequest(mediaInfo);
-
-
-					console.log("cast.framework.CastContext.getInstance()", cast.framework.CastContext.getInstance().getCurrentSession);
-
-					castSession.loadMedia(request).then(
-						function() { console.log('Load succeed'); },
-						function(errorCode) { console.log('Error code: ' + errorCode); }
-					);
+					
 				} );
-
-				
-				
-				
 			};
+			
+			var loadVideo = function(mediaIndex) {
+				var mediaInfo = new chrome.cast.media.MediaInfo(mediaContents[mediaIndex]['sources'][0], 'video/mp4');
+				var request = new chrome.cast.media.LoadRequest(mediaInfo);
 
+				castSession.loadMedia(request).then(
+					function() { console.log('Load succeed'); },
+					function(errorCode) { console.log('Error code: ' + errorCode); }
+				);
+			};
+			
+			var initUI = function() {
+				var c = document.querySelector("#thumb-container");
+				for(var i = 0; i < mediaContents.length; i++) {
+					var thumb = document.createElement("div");
+					var a = document.createElement("a");
+					a.innerHTML = mediaContents[i].title;
+					(function(index, a) {
+						a.click = loadVideo(index);
+					})(i, a);
+					thumb.classList.add("thumb");
+					thumb.appendChild(a);
+					c.appendChild(thumb);
+					
+				}
+			};
 
 			window['__onGCastApiAvailable'] = function(isAvailable) {
 				if (isAvailable) {
