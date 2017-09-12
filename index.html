@@ -10,7 +10,7 @@
 		<h2>Cast sender app</h2>
 		<button id="castButton" is="google-cast-button">Cast Me</button>
 		
-		<video id="video" src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+		<!--<video id="video" src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>-->
 		<script>
 		
 			document.getElementById("video").addEventListener("error", function(e) {console.log(e);});
@@ -110,8 +110,8 @@
 					autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
 				});
 
-				var remotePlayer = new cast.framework.RemotePlayer();
-				var remotePlayerController = new cast.framework.RemotePlayerController(this.remotePlayer);				
+				//var remotePlayer = new cast.framework.RemotePlayer();
+				//var remotePlayerController = new cast.framework.RemotePlayerController(this.remotePlayer);				
 				
 				var mediaInfo = new chrome.cast.media.MediaInfo(mediaContents[mediaIndex]['sources'][0], 'video/mp4');
 				var request = new chrome.cast.media.LoadRequest(mediaInfo);
