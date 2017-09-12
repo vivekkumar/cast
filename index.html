@@ -137,9 +137,11 @@
 					var thumb = document.createElement("div");
 					var a = document.createElement("a");
 					a.innerHTML = mediaContents[i].title;
+					a.href = "#";					
 					(function(index, a) {
-						a.click = function() {
+						a.onclick = function() {
 							loadVideo(index);
+							return false;
 						}
 					})(i, a);
 					thumb.classList.add("thumb");
