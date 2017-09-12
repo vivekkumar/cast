@@ -138,7 +138,9 @@
 					var a = document.createElement("a");
 					a.innerHTML = mediaContents[i].title;
 					(function(index, a) {
-						a.click = loadVideo(index);
+						a.click = function() {
+							loadVideo(index);
+						}
 					})(i, a);
 					thumb.classList.add("thumb");
 					thumb.appendChild(a);
