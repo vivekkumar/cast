@@ -110,19 +110,27 @@
 					autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
 				});
 
-				//var remotePlayer = new cast.framework.RemotePlayer();
-				//var remotePlayerController = new cast.framework.RemotePlayerController(this.remotePlayer);				
+				var remotePlayer = new cast.framework.RemotePlayer();
+				var remotePlayerController = new cast.framework.RemotePlayerController(this.remotePlayer);				
+				var castSession;
 				
-				var mediaInfo = new chrome.cast.media.MediaInfo(mediaContents[mediaIndex]['sources'][0], 'video/mp4');
-				var request = new chrome.cast.media.LoadRequest(mediaInfo);
+				remotePlayerController.addEventListener(cast.framework.RemotePlayerEventType.IS_CONNECTED_CHANGED, function() {
+					castSession = cast.framework.CastContext.getInstance().getCurrentSession();
+					var mediaInfo = new chrome.cast.media.MediaInfo(mediaContents[mediaIndex]['sources'][0], 'video/mp4');
+					var request = new chrome.cast.media.LoadRequest(mediaInfo);
+
+
+					console.log("cast.framework.CastContext.getInstance()", cast.framework.CastContext.getInstance().getCurrentSession);
+
+					castSession.loadMedia(request).then(
+						function() { console.log('Load succeed'); },
+						function(errorCode) { console.log('Error code: ' + errorCode); }
+					);
+				} );
+
 				
-				var castSession = cast.framework.CastContext.getInstance().getCurrentSession();
-				console.log("cast.framework.CastContext.getInstance()", cast.framework.CastContext.getInstance().getCurrentSession);
 				
-				castSession.loadMedia(request).then(
-					function() { console.log('Load succeed'); },
-					function(errorCode) { console.log('Error code: ' + errorCode); }
-				);
+				
 			};
 
 
