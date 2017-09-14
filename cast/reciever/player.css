@@ -68,20 +68,6 @@ body {
   width: 192px;
   height: 192px;
 }
-/*
-.logo:before {
-    content: "ION";
-    position:absolute;
-    color: #fff;
-    font-size: 5em;
-    font-weight: 800;
-    background: rgba(255, 255, 255, .4);
-    padding: .25em;
-    border-radius: .25em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
 
 .player .placeholder-image {
   background-image: url("assets/placeholder-audio.jpg");
@@ -193,20 +179,6 @@ body {
   margin-bottom: 54px;
   background-image: url("assets/watermark.png");
 }
-/*
-.watermark:before {
-	content: "ION";
-	position:absolute;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-	font-size: 2em; 
-	font-weight: 800; 
-	background: rgba(255, 255, 255, .4); 
-	padding: .25em;
-	border-radius: .25em;
-}
-*/
 
 .player .gradient {
   display: none;
@@ -348,6 +320,7 @@ body {
   display: none;
 }
 
+/*
 .player[type="video"][state="launching"] .spinner {
   -webkit-animation: spin 1s infinite linear;
   height: 36px;
@@ -359,14 +332,15 @@ body {
   left: 50%;
   margin-left: 32px / -2;
 }
-
+*/
 /* ------------------------------------------------- */
 /* Player - Video - Loading                          */
 /* ------------------------------------------------- */
 
 .player[type="video"][state="loading"] .overlay,
 .player[type="video"][state="loading"] .controls,
-.player[type="video"][state="loading"] .watermark {
+.player[type="video"][state="loading"] .watermark,
+.player[type="video"][state="loading"] .spinner {
   display: block;
 }
 
@@ -387,7 +361,8 @@ body {
 /* ------------------------------------------------- */
 
 .player[type="video"][state="buffering"] .overlay,
-.player[type="video"][state="buffering"] .gradient {
+.player[type="video"][state="buffering"] .gradient,
+.player[type="video"][state="buffering"] .spinner{
   display: block;
   visibility: visible;
 }
