@@ -68,6 +68,20 @@ body {
   width: 192px;
   height: 192px;
 }
+/*
+.logo:before {
+    content: "ION";
+    position:absolute;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 800;
+    background: rgba(255, 255, 255, .4);
+    padding: .25em;
+    border-radius: .25em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
 
 .player .placeholder-image {
   background-image: url("assets/placeholder-audio.jpg");
@@ -178,7 +192,22 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 54px;
   background-image: url("assets/watermark.png");
+  background-color: rgba(0, 0, 0, .4); 
 }
+/*
+.watermark:before {
+	content: "ION";
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	font-size: 2em; 
+	font-weight: 800; 
+	background: rgba(255, 255, 255, .4); 
+	padding: .25em;
+	border-radius: .25em;
+}
+*/
 
 .player .gradient {
   display: none;
@@ -192,7 +221,7 @@ body {
 }
 
 .player .progressBar {
-  background-color: rgb(250, 178, 49);
+  background-color: #35ffa7;
 }
 
 .player .controls-progress {
