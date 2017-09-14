@@ -725,6 +725,7 @@ body {
 
 
 .buff {
+  visibility: hidden;
   background: #000;
   padding: 1.5rem 1.5rem;
   display: inline-block;
@@ -736,7 +737,6 @@ body {
   transform:translate(-50%);
 }
 .buff div {
-  visibility: none;
   display: inline-block;
   height: 20px;
   width: 20px;
