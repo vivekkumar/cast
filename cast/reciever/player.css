@@ -736,6 +736,7 @@ body {
   transform:translate(-50%);
 }
 .buff div {
+  visibility: none;
   display: inline-block;
   height: 20px;
   width: 20px;
