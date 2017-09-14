@@ -274,7 +274,7 @@ body {
 }
 
 .player .preview-mode-artwork {
-  background-image: url("assets/logo.png");
+  background-image: url("assets/background.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
