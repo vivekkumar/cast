@@ -751,10 +751,10 @@ body {
 
 .buff {
   background: #000;
-  padding: 2rem;
-  display: inline-block; 
-  border-radius: 1rem;
-  opacity: .8;
+  padding: 1.5rem 1.5rem;
+  display: inline-block;
+  border-radius: .5rem;
+  opacity: 0.5;
   position: absolute;
   top:50%;
   left: 50%;
@@ -762,11 +762,12 @@ body {
 }
 .buff div {
   display: inline-block;
-  height: 50px;
-  width:50px;
+  height: 20px;
+  width: 20px;
   background-color: #35ffa7;
   border-radius: 50%;
   animation: bubbleup 2s infinite;
+  vertical-align: middle;
 }
 
 /* Standard syntax */
