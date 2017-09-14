@@ -192,7 +192,6 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 54px;
   background-image: url("assets/watermark.png");
-  background-color: rgba(0, 0, 0, .4); 
 }
 /*
 .watermark:before {
