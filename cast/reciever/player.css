@@ -747,3 +747,39 @@ body {
 .player[state="done"] {
   background-image: url('assets/done.png');
 }
+
+
+.buff {
+  background: #000;
+  padding: 2rem;
+  display: inline-block; 
+  border-radius: 1rem;
+  opacity: .8;
+}
+.buff div {
+  display: inline-block;
+  height: 50px;
+  width:50px;
+  background-color: #35ffa7;
+  border-radius: 50%;
+  animation: bubbleup 2s infinite;
+}
+
+/* Standard syntax */
+@keyframes bubbleup {
+    0%   {transform: scale(0)}
+    50% {transform: scale(1)}
+    100% {transform: scale(0)}
+}
+.buff div:nth-child(1) {
+  animation-delay: 0s;
+}
+.buff div:nth-child(2) {
+  animation-delay: .25s;
+}
+.buff div:nth-child(3) {
+  animation-delay: .5s;
+}
+.buff div:nth-child(4) {
+  animation-delay: .75s;
+}
