@@ -930,8 +930,8 @@ CastPlayer.getErrorMessage = function(error) {
  */
 var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
     'videos' : [
-        { 'description' : "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
-            'sources' : ['http://ottdemocdn.abertistelecom.com/content/SON_Pixels_FT_HD_VENG_ERC_CLEPixelsOPEN_20170519_122936/index/index.m3u8'],
+        { 'description' : "Some abra content to be played for demo purpose.,
+            'sources' : ['http://ottdemocdn.abertistelecom.com/content/017391_LIO_LaLaLand_TR_HD_VENG_NAG_CLELaLaLandOPEN_20170801_134236/index/index.m3u8'],
             'subtitle' : 'By Blender Foundation',
             'thumb' : 'images/BigBuckBunny.jpg',
             'title' : 'Abra Content'
