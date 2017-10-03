@@ -764,3 +764,39 @@ body {
 .buff div:nth-child(4) {
   animation-delay: .75s;
 }
+
+.ContentTitle {
+	font-size: 45px;
+	font-family: "Nunito Sans";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: center;
+	position: absolute;
+	left: 603.515px;
+	top: 909.138px;
+	z-index: 19;
+}
+
+.channelInfo {
+	font-size: 24px;
+	font-family: "Nunito Sans";
+	color: rgb(153, 153, 153);
+	line-height: 1.2;
+	text-align: center;
+	position: absolute;
+	left: 905.938px;
+	top: 973.1px;
+	z-index: 34;
+}
+
+.start, .end {
+	font-size: 24px;
+	font-family: "Nunito Sans";
+	color: rgb(201, 201, 201);
+	line-height: 1.2;
+	text-align: left;
+	position: absolute;
+	left: 148.75px;
+	top: 880.14px;
+	z-index: 25;
+}
