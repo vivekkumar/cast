@@ -930,7 +930,7 @@ CastPlayer.getErrorMessage = function(error) {
  */
 var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
     'videos' : [
-        { 'description' : "Some abra content to be played for demo purpose.,
+        { 'description' : "Some abra content to be played for demo purpose.",
             'sources' : ['http://ottdemocdn.abertistelecom.com/content/019874_DIS_RogueOneAStarWarsSt…HD_VENG_NAG_CLERogueOneAStarWarsStoryOPEN_20170801_134706/index/index.m3u8'],
             'subtitle' : 'By Blender Foundation',
             'thumb' : 'images/BigBuckBunny.jpg',
