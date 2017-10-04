@@ -95,7 +95,7 @@ body {
 
 .player .media-info {
   margin-top: 40px;
-  height: 160px;
+  height: 140px;
 }
 
 .player .media-artwork {
@@ -456,7 +456,7 @@ body {
 }
 
 .player[type="video"][state="paused"] .media-info {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 1s linear 5s;
 }
 
