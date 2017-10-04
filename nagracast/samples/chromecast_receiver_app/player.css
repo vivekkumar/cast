@@ -192,21 +192,23 @@ body {
 }
 
 .player .progressBar {
-  background-color: #35ffa7;
+  background-color: #35ffa0;
 }
 
 .player .controls-progress {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #555555;
   height: 8px;
   margin-top: 11px;
   margin-bottom: 11px;
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
 }
 
 .player .controls-progress-inner {
   height: 100%;
   opacity: 0.8;
+  border-radius: 5px;
 }
 
 .player .controls-progress-thumb {
@@ -220,22 +222,18 @@ body {
 
 .player .controls-cur-time,
 .player .controls-total-time {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  color: color: rgb(201, 201, 201);
+  font-size: 24px;
   font-weight: 400;
 }
 
 .player .controls-cur-time {
   float: left;
-  line-height: 30px;
-  margin-left: 15px;
   margin-right: 15px;
 }
 
 .player .controls-total-time {
   float: right;
-  line-height: 30px;
-  margin-left: 15px;
 }
 
 .player .preview-mode-info {
