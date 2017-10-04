@@ -193,13 +193,7 @@ body {
 
 .player .gradient {
   display: none;
-  opacity: 0.9;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1.0),
-    rgba(0, 0, 0, 0.0) 72%,
-    rgba(0, 0, 0, 0.0) 100%
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, .9) 222px,  rgba(0, 0, 0, 0.0) 540px);
 }
 
 .player .progressBar {
@@ -465,7 +459,7 @@ body {
 }
 
 .player[type="video"][state="paused"] .gradient {
-  opacity: 0.1;
+  opacity: 1;
   -webkit-transition: opacity 1s linear 5s;
 }
 
