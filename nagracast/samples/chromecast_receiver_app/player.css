@@ -181,12 +181,12 @@ body {
   position: absolute;
   top: 64px;
   left: 64px;
-  bottom: 190px;
+  bottom: 0;
   right: 64px;
   display: none;
   background-position: bottom right;
   background-repeat: no-repeat;
-  margin-bottom: 54px;
+  margin-bottom: 5px;
   background-image: url("assets/watermark.png");
   opacity: .5;
 }
