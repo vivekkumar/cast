@@ -152,7 +152,6 @@ body {
 .player .controls {
   display: none;
   bottom: 0;
-  height: 30px;
   left: 0;
   position: absolute;
   right: 0;
@@ -172,7 +171,7 @@ body {
 .player .overlay {
   position: absolute;
   left: 64px;
-  bottom: 64px;
+  bottom: 0;
   right: 64px;
   display: none;
   top: auto;
@@ -182,13 +181,14 @@ body {
   position: absolute;
   top: 64px;
   left: 64px;
-  bottom: 64px;
+  bottom: 190px;
   right: 64px;
   display: none;
   background-position: bottom right;
   background-repeat: no-repeat;
   margin-bottom: 54px;
   background-image: url("assets/watermark.png");
+  opacity: .5;
 }
 
 .player .gradient {
