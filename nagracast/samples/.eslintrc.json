@@ -1,0 +1,15 @@
+{
+	"globals": {
+    	"document": true,
+		"console": true,
+		"dashjs": true,
+		"OTV": true,
+		"cast": true,
+		"chrome": true,
+		"navigator": true
+  	},
+	"rules": {
+		"no-magic-numbers": "off",
+		"no-console": "off"
+	}
+}
