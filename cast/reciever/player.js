@@ -1222,7 +1222,7 @@ sampleplayer.CastPlayer.prototype.setType_ = function (type, isLiveStream) {
 	this.element_.setAttribute('type', type);
 	this.element_.setAttribute('live', isLiveStream.toString());
 	var overlay = this.getElementByClass_('.overlay');
-	var watermark = this.getElementByClass_('.watermark');
+	//var watermark = this.getElementByClass_('.watermark');
 	clearInterval(this.burnInPreventionIntervalId_);
 	if (type != sampleplayer.Type.AUDIO) {
 		overlay.removeAttribute('style');
