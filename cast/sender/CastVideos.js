@@ -431,7 +431,7 @@ CastPlayer.prototype.setupRemotePlayer = function () {
         
         
         /* Additonal ION specific metadata */
-        mediaInfo.metadata.streamType = "btv"; /* 'btv|vod' */
+       /* mediaInfo.metadata.streamType = "btv"; // 'btv|vod'
         mediaInfo.metadata.channelInfo = {
         		channelNumber: 401,
         		channelName: 'HBO',
@@ -442,7 +442,7 @@ CastPlayer.prototype.setupRemotePlayer = function () {
         		startTime: 0,
         		endTime: 30*60*60*100 // 30 mins
         };
-
+        */
         var request = new chrome.cast.media.LoadRequest(mediaInfo);
         castSession.loadMedia(request).then(
             this.playerHandler.loaded.bind(this.playerHandler),
@@ -943,13 +943,7 @@ CastPlayer.getErrorMessage = function(error) {
  * Hardcoded media json objects
  */
 var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
-    'videos' : [
-        { 'description' : "Some abra content to be played for demo purpose.",
-            'sources' : ['http://ottdemocdn.abertistelecom.com/content/019874_DIS_RogueOneAStarWarsSt…HD_VENG_NAG_CLERogueOneAStarWarsStoryOPEN_20170801_134706/index/index.m3u8'],
-            'subtitle' : 'By Blender Foundation',
-            'thumb' : 'images/BigBuckBunny.jpg',
-            'title' : 'Abra Content'
-        },
+    'videos' : [        
         { 'description' : 'The first Blender Open Movie from 2006',
             'sources' : ['http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'],
             'subtitle' : 'By Blender Foundation',
@@ -1021,5 +1015,11 @@ var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
             'subtitle' : 'By Garage419',
             'thumb' : 'images/WhatCarCanYouGetForAGrand.jpg',
             'title' : 'What care can you get for a grand?'
-        }
+        },
+        { 'description' : "Some abra content to be played for demo purpose.",
+            'sources' : ['http://ottdemocdn.abertistelecom.com/content/019874_DIS_RogueOneAStarWarsSt…HD_VENG_NAG_CLERogueOneAStarWarsStoryOPEN_20170801_134706/index/index.m3u8'],
+            'subtitle' : 'By Blender Foundation',
+            'thumb' : 'images/BigBuckBunny.jpg',
+            'title' : 'Abra Content'
+        },
     ]}]};
