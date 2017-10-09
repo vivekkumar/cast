@@ -719,7 +719,7 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 		var subtitleElement = this.element_.querySelector('.media-subtitle');
 		sampleplayer.setInnerText_(subtitleElement, metadata.subtitle);
 		
-		var mediaTypeText = this.element_.querySelector('.media-type-text');
+		/*var mediaTypeText = this.element_.querySelector('.media-type-text');
 		if(metadata.streamType == 'btv') {
 			if(metadata.channelInfo) {
 				sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.channelName);
@@ -731,7 +731,7 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 			}
 		} else { 
 			sampleplayer.setInnerText_(mediaTypeText, 'VOD');
-		}
+		}*/
 
 		var artwork = sampleplayer.getMediaImageUrl_(media);
 		if (artwork) {
