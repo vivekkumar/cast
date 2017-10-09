@@ -350,14 +350,11 @@ body {
 .player[type="video"][state="loading"] .controls-cur-time,
 .player[type="video"][state="loading"] .controls-total-time,
 .player[type="video"][state="loading"] .controls-progress-thumb,
-.player[type="video"][state="loading"] .controls-play-pause {
+.player[type="video"][state="loading"] .controls-play-pause,
+.player[type="video"][state="loading"] .controls-progress-inner {
   display: none;
 }
 
-.player[type="video"][state="loading"] .controls-progress-inner {
-  width: 90% !important;
-  -webkit-animation: loading 2s infinite linear;
-}
 
 /* ------------------------------------------------- */
 /* Player - Video - Buffering                        */
@@ -365,7 +362,7 @@ body {
 
 .player[type="video"][state="buffering"] .overlay,
 .player[type="video"][state="buffering"] .gradient,
-.player[type="video"][state="buffering"] .spinner{
+.player[type="video"][state="buffering"] .spinner {
   display: block;
   visibility: visible;
 }
@@ -384,8 +381,6 @@ body {
 }
 
 .player[type="video"][state="buffering"] .controls-play-pause {
-  background-image: url("assets/buffering.png");
-  -webkit-animation: spin 1s infinite linear;
 }
 
 .player[type="video"][state="buffering"][live="true"] .controls-cur-time,

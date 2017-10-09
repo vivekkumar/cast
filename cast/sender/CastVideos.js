@@ -431,16 +431,16 @@ CastPlayer.prototype.setupRemotePlayer = function () {
         
         
         /* Additonal ION specific metadata */
-        mediaInfo.metadata.streamType = "btv"; /* 'live|vod' */
+        mediaInfo.metadata.streamType = "btv"; /* 'btv|vod' */
         mediaInfo.metadata.channelInfo = {
         		channelNumber: 401,
         		channelName: 'HBO',
         		episode: {
-        			episodeName: 'S1 E2'
+        			episodeName: 'S1 E2',
         			episodeNumber: 2
         		},
         		startTime: 0,
-        		endTime: 30*60*60*100
+        		endTime: 30*60*60*100 // 30 mins
         };
 
         var request = new chrome.cast.media.LoadRequest(mediaInfo);
