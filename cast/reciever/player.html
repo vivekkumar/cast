@@ -42,30 +42,25 @@ The overlay layer holds:
   <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
   <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/mediaplayer/1.0.0/media_player.js"></script>
   <script type="text/javascript" src="player.js"></script>
+  <script type="text/javascript" src="./dist/opy-web-html5-all-debug.js"></script>
+
+
 </head>
 <body style="margin: 0">
-	
     <div id="player" class="player">
         <div class="media">
             <video></video>
         </div>
         <div class="logo"></div>
         <div class="spinner buff">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-        <div class="watermark"></div>
+        	<div></div>
+        	<div></div>
+        	<div></div>
+        	<div></div>
+        </div>
+        <!-- <div class="watermark"></div> -->
         <div class="gradient"></div>
-        <div class="overlay">
-            <div class="media-info">
-                <div class="media-artwork"></div>
-                <div class="media-text">
-                    <div class="media-title"></div>
-                    <div class="media-subtitle"></div>
-                </div>
-            </div>
+        <div class="overlay">            
             <div class="preview-mode-info">
                 <div class="preview-mode-artwork"></div>
                 <div class="preview-mode-text">
@@ -80,12 +75,25 @@ The overlay layer holds:
             </div>
             <div class="controls">
                 <span class="controls-play-pause"></span>
-                <span class="controls-cur-time"></span>
-                <span class="controls-total-time"></span>
+                
                 <div class="controls-progress">
                     <div class="controls-progress-inner progressBar"></div>
                     <div class="controls-progress-thumb"></div>
                 </div>
+                
+                <div>                
+                	<span class="controls-cur-time">9:00p</span>
+                	<span class="controls-total-time">10.00p</span>
+                </div>
+                
+                <div class="media-info">
+	                <div class="media-artwork"></div>
+	                <div class="media-text">
+	                    <div><span class="media-title"></span> | <span class="episode-title"></span></div>
+	                    <div class="media-type-text"></div>
+	                    <div class="media-subtitle"></div>
+	                </div>
+	            </div>
             </div>
         </div>
     </div>
