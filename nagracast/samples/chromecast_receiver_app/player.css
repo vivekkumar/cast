@@ -339,6 +339,10 @@ body {
 /* ------------------------------------------------- */
 /* Player - Video - Loading                          */
 /* ------------------------------------------------- */
+.player[type="video"][state="loading"] {
+	background-image: none;
+}
+
 
 .player[type="video"][state="loading"] .overlay,
 .player[type="video"][state="loading"] .controls,
@@ -359,6 +363,10 @@ body {
 /* ------------------------------------------------- */
 /* Player - Video - Buffering                        */
 /* ------------------------------------------------- */
+.player[type="video"][state="buffering"] {
+	background-image: none;
+}
+
 
 .player[type="video"][state="buffering"] .overlay,
 .player[type="video"][state="buffering"] .gradient,
