@@ -490,7 +490,7 @@ body {
 }
 
 .player[type="video"][state="playing"].seeking .media-info {
-  display: none;
+  display: block;
 }
 
 .player[type="video"][state="playing"].seeking .controls {
@@ -498,7 +498,7 @@ body {
 }
 
 .player[type="video"][state="playing"] .controls-play-pause {
-  background-image: url("assets/playing.png");
+  background-image: none;
 }
 
 .player[type="video"][state="playing"]:not(.seeking) .controls-play-pause {
