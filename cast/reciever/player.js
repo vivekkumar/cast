@@ -726,7 +726,7 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 				
 				if(mediaInfo.metadata.channelInfo.episode) {
 					var episodeTitle = this.element_.querySelector('.episode-title');
-					sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.episode.episodeName);
+					sampleplayer.setInnerText_(episodeTitle, ' | ' + metadata.channelInfo.episode.episodeName);
 				}
 			}
 		} else { 

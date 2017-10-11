@@ -498,8 +498,7 @@ body {
 }
 
 .player[type="video"][state="playing"] .controls-play-pause {
-  background-image: url("assets/buffering.png");
-  -webkit-animation: spin 1s infinite linear;
+  background-image: url("assets/playing.png");
 }
 
 .player[type="video"][state="playing"]:not(.seeking) .controls-play-pause {
