@@ -109,7 +109,7 @@ body {
   min-width: 96px;
   max-width: 266px;
   width: 100%;
-  display: none;
+  display: none !important;
 }
 
 .player .media-text {
