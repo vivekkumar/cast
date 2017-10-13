@@ -723,7 +723,7 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 		var mediaTypeText = this.element_.querySelector('.media-type-text');
 		if(metadata.streamType == 'btv') {
 			if(metadata.channelInfo) {
-				sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.channelName);
+				sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.channelName + " " + metadata.channelInfo.channelNumber);
 				
 				if(metadata.channelInfo.episode) {
 					var episodeTitle = this.element_.querySelector('.episode-title');
