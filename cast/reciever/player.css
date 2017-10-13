@@ -330,10 +330,10 @@ body {
   display: none;
 }
 
-.player[type="video"][state="launching"] .spinner {
+/* .player[type="video"][state="launching"] .spinner {
   display: block;
 }
-
+ */
 
 /*
 .player[type="video"][state="launching"] .spinner {
