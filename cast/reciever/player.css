@@ -304,7 +304,7 @@ body {
 
 
 .player .spinner {
-  display: hidden;
+  display: none;
 }
 
 
