@@ -407,7 +407,6 @@ body {
   display: block;
 }
 
-.player[type="video"][state="buffering"] .media-info,
 .player[type="video"][state="buffering"]:not(.seeking) .controls-cur-time,
 .player[type="video"][state="buffering"]:not(.seeking) .controls-total-time,
 .player[type="video"][state="buffering"]:not(.seeking) .controls-progress {
