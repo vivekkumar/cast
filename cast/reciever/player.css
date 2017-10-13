@@ -386,7 +386,7 @@ body {
 
 .player[type="video"][state="buffering"] .media-artwork,
 .player[type="video"][state="buffering"] .media-info {
-  display: none;
+  display: block;
 }
 
 .player[type="video"][state="buffering"] .controls {
@@ -439,6 +439,11 @@ body {
 .player[type="video"][state="paused"]:not(.seeking) .controls-progress {
   display: block;
 }
+
+.player[type="video"][state="paused"]:not(.seeking) .spinner {
+  display: none;
+}
+
 
 .player[type="video"][state="paused"][live="true"] .controls-cur-time,
 .player[type="video"][state="paused"][live="true"] .controls-total-time,
@@ -736,11 +741,8 @@ body {
 
 
 .buff {
-  background: #000;
   padding: 1.5rem 1.5rem;
   display: inline-block;
-  border-radius: .5rem;
-  opacity: 0.5;
   position: absolute;
   top:50%;
   left: 50%;
@@ -748,8 +750,9 @@ body {
 }
 .buff div {
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 9px;
+  width: 9px;
+  margin: 0 6px;
   background-color: #35ffa7;
   border-radius: 50%;
   animation: bubbleup 2s infinite;

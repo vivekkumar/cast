@@ -720,19 +720,19 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 		sampleplayer.setInnerText_(subtitleElement, metadata.subtitle);
 		
 		
-		/*var mediaTypeText = this.element_.querySelector('.media-type-text');
+		var mediaTypeText = this.element_.querySelector('.media-type-text');
 		if(metadata.streamType == 'btv') {
 			if(metadata.channelInfo) {
 				sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.channelName);
 				
 				if(mediaInfo.metadata.channelInfo.episode) {
 					var episodeTitle = this.element_.querySelector('.episode-title');
-					sampleplayer.setInnerText_(episodeTitle, ' | ' + metadata.channelInfo.episode.episodeName);
+					sampleplayer.setInnerText_(episodeTitle, ' | ' + mediaInfo.metadata.channelInfo.episode.episodeName);
 				}
 			}
 		} else { 
 			sampleplayer.setInnerText_(mediaTypeText, 'VOD');
-		}*/
+		}
 
 		var artwork = sampleplayer.getMediaImageUrl_(media);
 		if (artwork) {
