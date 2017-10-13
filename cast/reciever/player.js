@@ -725,13 +725,13 @@ sampleplayer.CastPlayer.prototype.loadMetadata_ = function (media) {
 			if(metadata.channelInfo) {
 				sampleplayer.setInnerText_(mediaTypeText, metadata.channelInfo.channelName);
 				
-				if(mediaInfo.metadata.channelInfo.episode) {
+				if(metadata.channelInfo.episode) {
 					var episodeTitle = this.element_.querySelector('.episode-title');
-					sampleplayer.setInnerText_(episodeTitle, ' | ' + mediaInfo.metadata.channelInfo.episode.episodeName);
+					sampleplayer.setInnerText_(episodeTitle, ' | ' + metadata.channelInfo.episode.episodeName);
 				}
 			}
 		} else { 
-			sampleplayer.setInnerText_(mediaTypeText, 'VOD');
+			sampleplayer.setInnerText_(mediaTypeText, 'On Demand');
 		}
 
 		var artwork = sampleplayer.getMediaImageUrl_(media);
