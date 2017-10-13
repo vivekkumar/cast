@@ -302,6 +302,12 @@ body {
   font-weight: bold;
 }
 
+
+.player .spinner {
+  display: hidden;
+}
+
+
 /* ------------------------------------------------- */
 /* Player - Video                                    */
 /* ------------------------------------------------- */
@@ -746,7 +752,7 @@ body {
   position: absolute;
   top:50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 45%);
 }
 .buff div {
   display: inline-block;
@@ -755,7 +761,7 @@ body {
   margin: 0 6px;
   background-color: #35ffa7;
   border-radius: 50%;
-  animation: bubbleup 2s infinite;
+  animation: bubbleup 1.5s infinite;
   vertical-align: middle;
 }
 
